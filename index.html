@@ -17,8 +17,10 @@
         <span class="brand-name">Unwindy</span>
       </div>
       <nav class="nav">
-        <a href="#features">Funciones</a>
-        <a href="#download">Descargar</a>
+        <a href="#features" data-i18n="navFeatures">Funciones</a>
+        <a href="#why-sleep" data-i18n="navWhySleep">Por qué dormir bien</a>
+        <a href="#download" data-i18n="navDownload">Descargar</a>
+        <a href="#support" data-i18n="navSupport">Apóyanos</a>
       </nav>
     </div>
   </header>
@@ -26,20 +28,20 @@
   <main>
     <section class="hero">
       <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>Duerme mejor,<br />cada noche.</h1>
-          <p class="hero-subtitle">
+        <div class="hero-text reveal">
+          <h1 data-i18n="heroTitle">Duerme mejor,<br />cada noche.</h1>
+          <p class="hero-subtitle" data-i18n="heroSubtitle">
             Calcula tus ciclos de sueño, relájate con sonidos naturales,
             respira guiado y despierta con energía. Todo en una sola app.
           </p>
           <div class="hero-actions">
-            <a href="#download" class="btn btn-primary">Descargar la app</a>
-            <a href="#features" class="btn btn-secondary">Ver funciones</a>
+            <a href="#download" class="btn btn-primary" data-i18n="heroBtnDownload">Descargar la app</a>
+            <a href="#features" class="btn btn-secondary" data-i18n="heroBtnFeatures">Ver funciones</a>
           </div>
         </div>
-        <div class="hero-art" aria-hidden="true">
+        <div class="hero-art reveal" aria-hidden="true">
           <div class="moon-glow"></div>
-          <img src="assets/logo.png" alt="" class="hero-logo" />
+          <img src="assets/logo.png" alt="" class="hero-logo float" />
         </div>
       </div>
     </section>
@@ -59,43 +61,74 @@
              data-full-width-responsive="true"></ins>
         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         -->
-        <span class="ad-placeholder">Espacio publicitario</span>
+        <span class="ad-placeholder" data-i18n="adPlaceholder">Espacio publicitario</span>
       </div>
     </section>
 
     <section id="features" class="features">
       <div class="container">
-        <h2 class="section-title">Todo lo que necesitas para dormir bien</h2>
+        <h2 class="section-title reveal" data-i18n="featuresTitle">Todo lo que necesitas para dormir bien</h2>
         <div class="features-grid">
-          <article class="feature-card">
+          <article class="feature-card reveal">
             <div class="feature-icon">🌙</div>
-            <h3>Calculadora de ciclos</h3>
-            <p>Descubre la hora exacta para dormir o despertar según ciclos de sueño de 90 minutos.</p>
+            <h3 data-i18n="featureCyclesTitle">Calculadora de ciclos</h3>
+            <p data-i18n="featureCyclesText">Descubre la hora exacta para dormir o despertar según ciclos de sueño de 90 minutos.</p>
           </article>
-          <article class="feature-card">
+          <article class="feature-card reveal">
             <div class="feature-icon">🎧</div>
-            <h3>Sonidos relajantes</h3>
-            <p>Lluvia, olas, bosque, fuego y más — sonidos ambientales para conciliar el sueño.</p>
+            <h3 data-i18n="featureSoundsTitle">Sonidos relajantes</h3>
+            <p data-i18n="featureSoundsText">Lluvia, olas, bosque, fuego y más — sonidos ambientales para conciliar el sueño.</p>
           </article>
-          <article class="feature-card">
+          <article class="feature-card reveal">
             <div class="feature-icon">🫁</div>
-            <h3>Respiración guiada</h3>
-            <p>Técnicas de relajación, meditación y respiración militar con guía visual y sonora.</p>
+            <h3 data-i18n="featureBreathTitle">Respiración guiada</h3>
+            <p data-i18n="featureBreathText">Técnicas de relajación, meditación y respiración militar con guía visual y sonora.</p>
           </article>
-          <article class="feature-card">
+          <article class="feature-card reveal">
             <div class="feature-icon">⏰</div>
-            <h3>Alarmas inteligentes</h3>
-            <p>Crea alarmas directamente en el reloj de tu sistema, sincronizadas con tus ciclos.</p>
+            <h3 data-i18n="featureAlarmsTitle">Alarmas inteligentes</h3>
+            <p data-i18n="featureAlarmsText">Crea alarmas directamente en el reloj de tu sistema, sincronizadas con tus ciclos.</p>
           </article>
-          <article class="feature-card">
+          <article class="feature-card reveal">
             <div class="feature-icon">🌅</div>
-            <h3>Amanecer y atardecer</h3>
-            <p>Consulta la luz solar de tu ubicación para ajustar tu rutina de descanso.</p>
+            <h3 data-i18n="featureSunTitle">Amanecer y atardecer</h3>
+            <p data-i18n="featureSunText">Consulta la luz solar de tu ubicación para ajustar tu rutina de descanso.</p>
           </article>
-          <article class="feature-card">
+          <article class="feature-card reveal">
             <div class="feature-icon">🌐</div>
-            <h3>Disponible en 10 idiomas</h3>
-            <p>Español, inglés, francés, alemán, portugués, italiano, ruso, chino, japonés y coreano.</p>
+            <h3 data-i18n="featureLangTitle">Disponible en 10 idiomas</h3>
+            <p data-i18n="featureLangText">Español, inglés, francés, alemán, portugués, italiano, ruso, chino, japonés y coreano.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-sleep" class="why-sleep">
+      <div class="container">
+        <h2 class="section-title reveal" data-i18n="whyTitle">Por qué cuidar tu sueño importa</h2>
+        <p class="why-intro reveal" data-i18n="whyIntro">
+          Dormir bien no es un lujo: es una de las bases más importantes de tu salud física y mental.
+        </p>
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <span class="why-number">01</span>
+            <h3 data-i18n="whyItem1Title">Memoria y aprendizaje</h3>
+            <p data-i18n="whyItem1Text">Durante el sueño profundo, el cerebro consolida recuerdos y organiza lo aprendido durante el día.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-number">02</span>
+            <h3 data-i18n="whyItem2Title">Sistema inmune</h3>
+            <p data-i18n="whyItem2Text">El descanso adecuado fortalece tus defensas naturales y acelera la recuperación del cuerpo.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-number">03</span>
+            <h3 data-i18n="whyItem3Title">Salud emocional</h3>
+            <p data-i18n="whyItem3Text">La falta de sueño se asocia con mayor ansiedad, irritabilidad y dificultad para regular emociones.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-number">04</span>
+            <h3 data-i18n="whyItem4Title">Rendimiento diario</h3>
+            <p data-i18n="whyItem4Text">Un buen descanso mejora la concentración, la toma de decisiones y la energía a lo largo del día.</p>
           </article>
         </div>
       </div>
@@ -103,13 +136,30 @@
 
     <section id="download" class="download">
       <div class="container download-inner">
-        <h2 class="section-title">Descarga Unwindy</h2>
-        <p class="download-note">
+        <h2 class="section-title reveal" data-i18n="downloadTitle">Descarga Unwindy</h2>
+        <p class="download-note reveal" data-i18n="downloadNote">
           Estamos afinando los últimos detalles antes del lanzamiento oficial en Google Play.
         </p>
-        <div class="download-card">
-          <span class="download-badge">Próximamente</span>
-          <p>El enlace de descarga estará disponible muy pronto. Vuelve a visitarnos.</p>
+        <div class="download-card reveal">
+          <span class="download-badge" data-i18n="downloadBadge">Próximamente</span>
+          <p data-i18n="downloadCardText">El enlace de descarga estará disponible muy pronto. Vuelve a visitarnos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="support">
+      <div class="container support-inner reveal">
+        <h2 class="section-title" data-i18n="supportTitle">Apoya el desarrollo de Unwindy</h2>
+        <p class="support-text" data-i18n="supportText">Unwindy es desarrollado de forma independiente. Si te gusta el proyecto, ayúdanos a crecer:</p>
+        <div class="support-actions">
+          <a href="https://github.com/Kuantis" target="_blank" rel="noopener" class="support-btn">
+            <span class="support-btn-icon">⭐</span>
+            <span data-i18n="supportFollow">Síguenos</span>
+          </a>
+          <button type="button" class="support-btn" id="share-btn">
+            <span class="support-btn-icon">🔗</span>
+            <span data-i18n="supportShare">Compartir</span>
+          </button>
         </div>
       </div>
     </section>
@@ -121,10 +171,12 @@
         <img src="assets/logo.png" alt="Unwindy" class="brand-logo brand-logo-small" />
         <span class="brand-name">Unwindy</span>
       </div>
-      <p class="footer-copy">&copy; <span id="year"></span> Unwindy. Todos los derechos reservados.</p>
+      <a href="privacy.html" class="footer-link">Privacy Policy</a>
+      <p class="footer-copy">&copy; <span id="year"></span> Unwindy. <span data-i18n="footerRights">Todos los derechos reservados.</span></p>
     </div>
   </footer>
 
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
