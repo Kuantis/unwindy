@@ -365,6 +365,23 @@ a {
   border-color: var(--accent-blue);
 }
 
+.bmc-link {
+  display: inline-block;
+  margin-top: 24px;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.bmc-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.bmc-logo {
+  height: 44px;
+  width: auto;
+  border-radius: 8px;
+}
+
 /* Footer */
 .footer {
   border-top: 1px solid var(--border);
