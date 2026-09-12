@@ -28,6 +28,12 @@
       margin-bottom: 12px;
       color: var(--text-primary);
     }
+    .legal h3 {
+      font-size: 1.05rem;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
     .legal p, .legal li {
       color: var(--text-secondary);
       font-size: 0.98rem;
@@ -49,6 +55,26 @@
     .back-link:hover {
       color: var(--text-primary);
     }
+    .legal table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 8px;
+      font-size: 0.92rem;
+    }
+    .legal th, .legal td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid rgba(128, 128, 160, 0.25);
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+    .legal th {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+    .legal .table-wrap {
+      overflow-x: auto;
+    }
   </style>
 </head>
 <body>
@@ -66,121 +92,272 @@
     <div class="legal">
       <a href="index.html" class="back-link">← Volver al inicio</a>
       <h1>Política de Privacidad</h1>
-      <p class="updated">Última actualización: septiembre de 2026</p>
+      <p class="updated">Última actualización: 12 de septiembre de 2026</p>
 
       <p>
         Esta Política de Privacidad describe cómo Unwindy ("la app", "nosotros")
-        maneja la información al usar nuestra aplicación móvil. Unwindy es una
-        aplicación <strong>gratuita</strong> y <strong>no requiere creación de
-        cuenta ni inicio de sesión</strong> de ningún tipo para funcionar.
+        maneja la información al usar nuestra aplicación móvil. Unwindy
+        <strong>no requiere crear una cuenta ni iniciar sesión</strong> y
+        <strong>no tiene servidores propios</strong>: no existe ninguna base de
+        datos nuestra donde se guarde información sobre ti.
+      </p>
+      <p>
+        El responsable del tratamiento es <strong>Kuantis</strong>, desarrollador
+        de Unwindy, contactable en
+        <a class="inline-link" href="mailto:kuantis.dev@gmail.com">kuantis.dev@gmail.com</a>.
       </p>
 
-      <h2>1. Qué información utilizamos</h2>
-      <p>Unwindy está diseñada para funcionar con la mínima información posible:</p>
-      <ul>
-        <li>
-          <strong>Ubicación aproximada (GPS):</strong> se usa únicamente, y solo si
-          tú lo autorizas explícitamente, para calcular la hora de amanecer y
-          atardecer de tu zona. Esta información se procesa en tu propio
-          dispositivo y no se envía a nuestros servidores ni se almacena por
-          nosotros.
-        </li>
-        <li>
-          <strong>Preferencias de la app:</strong> idioma, formato de hora,
-          país, edad (opcional) y configuración de sonidos se guardan
-          únicamente en el almacenamiento local de tu dispositivo, no en un
-          servidor externo.
-        </li>
-        <li>
-          <strong>Identificadores de publicidad:</strong> como la app muestra
-          anuncios a través de Google AdMob, tu dispositivo puede compartir un
-          identificador de publicidad (Advertising ID) con Google para mostrar
-          anuncios relevantes. No tenemos acceso directo a esta información;
-          la gestiona Google conforme a su propia política de privacidad
-          (ver sección 3).
-        </li>
-      </ul>
-      <p>
-        No recopilamos nombres, correos electrónicos, contraseñas, contactos,
-        fotos, ni ningún dato que pueda identificarte personalmente, ya que la
-        app no tiene sistema de registro ni login.
-      </p>
+      <h2>1. Qué información se utiliza</h2>
 
-      <h2>2. Cómo usamos la información</h2>
-      <p>La información local descrita arriba se usa exclusivamente para:</p>
-      <ul>
-        <li>Calcular ciclos de sueño y horarios recomendados.</li>
-        <li>Mostrar la hora de amanecer/atardecer de tu ubicación.</li>
-        <li>Recordar tus preferencias de idioma, formato de hora y sonidos.</li>
-        <li>Mostrar publicidad a través de Google AdMob, que ayuda a mantener la app gratuita.</li>
-      </ul>
-
-      <h2>3. Servicios de terceros</h2>
+      <h3>Información que permanece en tu dispositivo</h3>
       <p>
-        Unwindy utiliza los siguientes servicios de terceros, cada uno con su
-        propia política de privacidad:
+        Nunca sale de tu teléfono ni la recibimos nosotros. Se borra por completo
+        al desinstalar la app:
       </p>
       <ul>
         <li>
-          <strong>Google AdMob:</strong> para mostrar anuncios dentro de la
-          app. Consulta la
-          <a class="inline-link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a>
-          y su
-          <a class="inline-link" href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">política de AdMob</a>
-          para más información.
+          <strong>Ubicación aproximada:</strong> solo si la autorizas, para
+          calcular la hora de amanecer y atardecer de tu zona. El cálculo se hace
+          en el propio dispositivo. La app solicita ubicación
+          <em>aproximada</em>, no precisa, y funciona con normalidad si la
+          rechazas.
         </li>
         <li>
-          <strong>Sonidos ambientales:</strong> algunos sonidos se transmiten
-          desde servidores públicos de archivo abierto (Internet Archive), lo
-          que requiere conexión a internet para reproducirlos; esa transmisión
-          no incluye información personal tuya.
+          <strong>Preferencias:</strong> idioma, formato de hora, país, edad
+          (opcional), tema claro/oscuro y ajustes de sonido.
+        </li>
+        <li>
+          <strong>Estado de la compra "Quitar anuncios":</strong> un simple
+          indicador de si la compra se realizó.
         </li>
       </ul>
 
-      <h2>4. Permisos del dispositivo</h2>
-      <p>Unwindy puede solicitar los siguientes permisos, siempre de forma opcional y explicando su propósito:</p>
+      <h3>Información que tratan terceros</h3>
       <ul>
-        <li><strong>Ubicación:</strong> para calcular amanecer/atardecer (opcional, puedes negarlo y la app sigue funcionando).</li>
-        <li><strong>Notificaciones/Alarmas:</strong> para crear alarmas en el reloj de tu sistema.</li>
-        <li><strong>Audio:</strong> para reproducir sonidos ambientales.</li>
+        <li>
+          <strong>Identificador de publicidad:</strong> si muestras anuncios,
+          Google AdMob accede al identificador publicitario de tu dispositivo y a
+          datos técnicos (modelo, sistema operativo, país aproximado) para
+          mostrar y medir anuncios. No tenemos acceso a esa información: la trata
+          Google como responsable independiente.
+        </li>
+        <li>
+          <strong>Datos de compra:</strong> si compras "Quitar anuncios", la
+          transacción la procesa <strong>Google Play</strong>. No recibimos ni
+          almacenamos tus datos de pago; solo sabemos si la compra está activa.
+        </li>
       </ul>
-      <p>Puedes revocar cualquiera de estos permisos en cualquier momento desde la configuración de tu dispositivo, sin que esto elimine la app.</p>
 
-      <h2>5. Menores de edad</h2>
       <p>
-        Unwindy no está dirigida específicamente a menores de 13 años y no
-        recopilamos intencionalmente información de menores. Si eres padre o
-        tutor y crees que tu hijo nos ha proporcionado información, contáctanos
-        para eliminarla.
+        <strong>No recopilamos</strong> nombre, correo electrónico, contraseñas,
+        contactos, fotos, micrófono, archivos ni ningún dato que te identifique
+        personalmente.
       </p>
 
-      <h2>6. Tus derechos según tu ubicación</h2>
+      <h2>2. Base legal del tratamiento (RGPD)</h2>
+      <p>Para usuarios del Espacio Económico Europeo y Reino Unido:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Finalidad</th><th>Base legal</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Funcionamiento de la app y guardado de preferencias</td>
+              <td>Interés legítimo (art. 6.1.f): sin ello la app no puede operar</td>
+            </tr>
+            <tr>
+              <td>Ubicación para amanecer/atardecer</td>
+              <td>Consentimiento (art. 6.1.a), revocable en los ajustes del sistema</td>
+            </tr>
+            <tr>
+              <td>Anuncios personalizados</td>
+              <td>Consentimiento (art. 6.1.a), solicitado al abrir la app</td>
+            </tr>
+            <tr>
+              <td>Anuncios no personalizados</td>
+              <td>Interés legítimo: sostienen la versión gratuita</td>
+            </tr>
+            <tr>
+              <td>Compra "Quitar anuncios"</td>
+              <td>Ejecución de un contrato (art. 6.1.b)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>3. Publicidad y consentimiento</h2>
       <p>
-        Dependiendo del país o región donde te encuentres, puedes tener derechos
-        adicionales sobre tus datos bajo leyes locales de protección de datos
-        (por ejemplo, el Reglamento General de Protección de Datos - RGPD/GDPR
-        en la Unión Europea, la Ley de Privacidad del Consumidor de California -
-        CCPA en Estados Unidos, o la Ley General de Protección de Datos - LGPD
-        en Brasil). Dado que Unwindy no recopila datos personales
-        identificables en servidores propios (no hay cuentas ni login), la
-        mayoría de estas solicitudes se resuelven simplemente desinstalando la
-        app o revocando permisos desde tu dispositivo. Para cualquier consulta
-        adicional, puedes contactarnos usando los datos de la sección 8.
+        Unwindy es gratuita y se financia con anuncios de Google AdMob. Si te
+        encuentras en el EEE o Reino Unido, al abrir la app por primera vez verás
+        un formulario de consentimiento donde eliges si aceptas anuncios
+        personalizados.
+      </p>
+      <ul>
+        <li><strong>Si aceptas:</strong> verás anuncios basados en tus intereses.</li>
+        <li>
+          <strong>Si rechazas:</strong> seguirás viendo anuncios, pero
+          <em>no personalizados</em> — no se usa tu identificador publicitario
+          para perfilarte.
+        </li>
+      </ul>
+      <p>
+        Puedes cambiar de opinión cuando quieras restableciendo el identificador
+        de publicidad desde <em>Ajustes → Google → Anuncios</em> en tu
+        dispositivo, o eliminando los anuncios con la compra descrita abajo.
+      </p>
+      <p>
+        Consulta la
+        <a class="inline-link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a>
+        y la
+        <a class="inline-link" href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">información de AdMob sobre datos</a>.
       </p>
 
-      <h2>7. Cambios a esta política</h2>
+      <h2>4. Cómo eliminar los anuncios</h2>
       <p>
-        Podemos actualizar esta Política de Privacidad ocasionalmente. Los
-        cambios se reflejarán en esta misma página con la fecha de
-        actualización correspondiente. Te recomendamos revisarla
-        periódicamente.
+        Unwindy ofrece una compra única llamada <strong>"Quitar anuncios"</strong>.
+        Al adquirirla, la app deja de cargar y mostrar cualquier anuncio, y por
+        tanto deja de transmitirse tu identificador publicitario a Google AdMob.
+        No es una suscripción: se paga una sola vez.
       </p>
 
-      <h2>8. Contacto</h2>
+      <h2>5. Permisos del dispositivo</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Permiso</th><th>Para qué</th><th>¿Obligatorio?</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ubicación aproximada</td>
+              <td>Calcular amanecer y atardecer</td>
+              <td>No, la app funciona sin él</td>
+            </tr>
+            <tr>
+              <td>Alarmas</td>
+              <td>Crear una alarma en el reloj del sistema</td>
+              <td>Solo al usar esa función</td>
+            </tr>
+            <tr>
+              <td>Notificaciones</td>
+              <td>Recordatorios de descanso</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Vibración</td>
+              <td>Avisos táctiles de la app</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Internet</td>
+              <td>Reproducir sonidos y cargar anuncios</td>
+              <td>Sí</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p>
-        Si tienes preguntas sobre esta Política de Privacidad, puedes
-        contactarnos a través de nuestras redes sociales enlazadas en la
-        <a class="inline-link" href="index.html#support">página principal</a>.
+        Unwindy <strong>no solicita</strong> micrófono, cámara, contactos,
+        almacenamiento ni ubicación precisa. Puedes revocar cualquier permiso
+        desde los ajustes de tu dispositivo sin desinstalar la app.
+      </p>
+
+      <h2>6. Servicios de terceros</h2>
+      <ul>
+        <li>
+          <strong>Google AdMob</strong> — publicidad.
+          <a class="inline-link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a>
+        </li>
+        <li>
+          <strong>Google Play Billing</strong> — procesa la compra "Quitar anuncios".
+        </li>
+        <li>
+          <strong>Internet Archive</strong> — algunos sonidos ambientales se
+          transmiten desde este archivo público. La reproducción no incluye
+          información personal tuya.
+        </li>
+      </ul>
+
+      <h2>7. Conservación de datos</h2>
+      <p>
+        Como no tenemos servidores, no conservamos nada. Los datos locales
+        permanecen en tu dispositivo hasta que borres los datos de la app o la
+        desinstales. Los datos que trata Google se rigen por sus propios plazos
+        de conservación.
+      </p>
+
+      <h2>8. Tus derechos</h2>
+
+      <h3>Espacio Económico Europeo y Reino Unido (RGPD)</h3>
+      <p>
+        Tienes derecho de acceso, rectificación, supresión, limitación,
+        portabilidad y oposición, así como a retirar tu consentimiento en
+        cualquier momento y a reclamar ante la autoridad de protección de datos
+        de tu país.
+      </p>
+      <p>
+        En la práctica, como no guardamos datos tuyos, puedes ejercer la
+        supresión total <strong>desinstalando la app</strong>. Para el resto,
+        escríbenos a
+        <a class="inline-link" href="mailto:kuantis.dev@gmail.com">kuantis.dev@gmail.com</a>
+        y responderemos en un plazo máximo de 30 días.
+      </p>
+
+      <h3>California (CCPA/CPRA)</h3>
+      <p>
+        <strong>No vendemos tu información personal</strong> ni la compartimos a
+        cambio de contraprestación económica. La publicidad personalizada puede
+        considerarse "compartir" bajo la CPRA: puedes excluirte rechazando el
+        consentimiento publicitario, restableciendo tu identificador de
+        publicidad, o comprando "Quitar anuncios". También puedes solicitarnos
+        información escribiendo al correo de contacto, sin recibir por ello un
+        trato discriminatorio.
+      </p>
+
+      <h3>Brasil (LGPD) y otros países</h3>
+      <p>
+        Se aplican derechos equivalentes de acceso, corrección y eliminación,
+        ejercitables por el mismo medio.
+      </p>
+
+      <h2>9. Transferencias internacionales</h2>
+      <p>
+        Nosotros no transferimos datos, porque no los recibimos. Google puede
+        tratar los datos publicitarios en servidores fuera de tu país, amparándose
+        en las cláusulas contractuales tipo de la Comisión Europea y los marcos
+        de transferencia descritos en su política de privacidad.
+      </p>
+
+      <h2>10. Menores de edad</h2>
+      <p>
+        Unwindy no está dirigida a menores de 13 años (16 en algunos países de la
+        UE) y no recopilamos intencionadamente información de menores. Si eres
+        padre, madre o tutor y crees que un menor a tu cargo nos ha proporcionado
+        información, escríbenos y la eliminaremos.
+      </p>
+
+      <h2>11. Seguridad</h2>
+      <p>
+        La información permanece en el almacenamiento privado de la app, aislado
+        por el propio sistema operativo frente a otras aplicaciones. Las
+        comunicaciones con servicios externos usan conexiones cifradas (HTTPS).
+      </p>
+
+      <h2>12. Cambios a esta política</h2>
+      <p>
+        Podemos actualizar esta política ocasionalmente. Los cambios se reflejarán
+        en esta página con su fecha de actualización. Si el cambio es
+        significativo, lo anunciaremos dentro de la app.
+      </p>
+
+      <h2>13. Contacto</h2>
+      <p>
+        Para cualquier consulta sobre privacidad o para ejercer tus derechos:
+        <a class="inline-link" href="mailto:kuantis.dev@gmail.com">kuantis.dev@gmail.com</a>
+      </p>
+      <p>
+        Consulta también nuestros
+        <a class="inline-link" href="terms.html">Términos y Condiciones</a>.
       </p>
     </div>
   </main>
